@@ -11,7 +11,7 @@ body {
     width: 100%;
 }
 .sidebar {
-    background-image: url('static/images/side.png');
+    background-image: url('../../static/images/side.png');
     background-size: cover;
     width: 300px;
     min-height: 100vh;
@@ -92,11 +92,12 @@ body {
 .upload-section {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 
 .upload-section label {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .upload-label {
@@ -137,21 +138,11 @@ input[type="file"] {
     margin-right: 10px;
 }
 
-.upload-section input[type="text"] { /* 링크 업로드 */
-    width: 200px;
-    background-color: #D9D9D9;
-    border: none;
-    padding: 10px;
-    margin-left: 13px;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 1.5px rgba(0, 0, 0, 0.4);
-}
-
 /* 영화 상세 정보 */
 .form-section {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -224,33 +215,6 @@ input[type="file"] {
     border: 2.5px solid #D9D9D9;
     padding: 10px;
     border-radius: 10px;
-}
-
-
-/* 구매 정보 */
-.purchase-section {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.purchase-section span {
-    margin-right: 10px;
-}
-
-.purchase-section button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-}
-
-.purchase-section button img {
-    margin-left: 5px;
-    width: 24px;
-    height: 24px;
 }
 
 .synopsis-section textarea {
