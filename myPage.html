@@ -30,9 +30,33 @@
             <!--프로필-->
             <section class="myProfile">
               <div>
-                <img id="myPhoto" src="static/images/myPhoto.png" />
-                <h1>단장최고짱</h1>
-                <a href="#"><div class=""></div>
+                <div id="myPhoto">
+                  <img src="static/images/background.png" />
+                </div>
+                <form method="get" action="#">
+                  <!--[체크]버튼-->
+                  <input
+                    id="commit"
+                    type="image"
+                    src="static/icons/commit.png"
+                    alt="프로필사진수정완료버튼"
+                  />
+                  <!--[+]버튼 클릭 시 파일 선택 실행 -->
+                  <input type="file" name="file1" style="display: none" />
+                  <img
+                    id="add"
+                    src="static/icons/add.png"
+                    onclick="document.all.file1.click()"
+                    ;
+                  />
+                </form>
+                <!--닉네임-->
+                <div id="nickname">
+                  <h1>단장최고짱</h1>
+                </div>
+                `
+                <a href="#"
+                  ><div class=""></div>
                   <img id="modify" src="static/images/myPotpolio.png" />
                 </a>
               </div>
@@ -41,6 +65,7 @@
             <img class="line" src="static/images/line.png" />
             <!--나의 기록-->
             <section class="row">
+              `
               <h3>나의 기록</h3>
               <a href="../myRecord/myRecord.html">
                 <img id="allR" src="static/images/viewAll.png" />
@@ -49,7 +74,7 @@
                 <!--나의 기록 영화 + 제목 한 세트-->
                 <a class="posterAndName" href="#">
                   <div class="poster">
-                    <img src="" />
+                    <img src="static/images/background.png" />
                   </div>
                   <figcaption>기록1</figcaption>
                 </a>
