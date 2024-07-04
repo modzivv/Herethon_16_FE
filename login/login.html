@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" class="">
+    <title>로그인 화면</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logofield">
+            <img src="../static/images/logo_white.svg" alt="로고" onclick="navigateToIndex()">
+            <h1>로그인</h1>
+        </div>
+        <div class="film"><img src="../static/images/film.svg" alt="필름"></div>
+    </div>
+
+    <div class="main">
+        <h2>다시 오신 것을 환영합니다! <br> 여러분의 다음 이야기를 기다립니다.</h2>
+        <div class="enterfield">
+            <h4>이메일</h4> 
+                <input type="text" placeholder="   이메일을 입력해 주세요." id ="input_em">
+            <h4>비밀번호</h4>
+            <input type="text" placeholder="   비밀번호를 입력해 주세요." id ="input_pw">
+        </div>
+        <div class="changebtn">
+            <button id="login"> 로그인 </button>
+            <h5 class="h5" onclick="navigateToSignUp()">회원가입</h5>
+        </div>
+    </div>
+
+    <script>
+        function navigateToSignUp() {
+            window.location.href = "../sign_up/sign_up.html";
+        }
+
+        function navigateToIndex() {
+            window.location.href = "../index/index.html";
+        }
+    </script>
+
+</body>
+</html>

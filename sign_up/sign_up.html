@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign_up.css" class="">
+    <title>회원가입 화면</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logofield">
+            <img src="../static/images/logo_white.svg" alt="로고" onclick="navigateToIndex()">
+            <h1>회원가입</h1>
+        </div>
+        <div class="film"><img src="../static/images/film.svg" alt="필름"></div>
+    </div>
+
+    <div class="main">
+        <h2>새로운 영화 세계에 오신 것을 환영합니다! <br> 지금 가입하고 나만의 영화 여정을 시작하세요.</h2>
+        <div class="enterfield">
+            <h4>이름</h4> 
+                <input type="text" placeholder="이름을 입력해 주세요." id ="input_name">
+            <h4>아이디</h4> 
+                <input type="text" placeholder="아이디를 입력해 주세요." id ="input_name">
+            <h4>이메일</h4>
+                <input type="text" placeholder="이메일을 입력해 주세요." id ="input_em">
+            <h4>비밀번호</h4> 
+                <h6>8자 이상 30자 이하, 숫자, 특수기호가 포함되어야 합니다.</h6>
+                <div class="pwfield">
+                    <input type="text" placeholder="비밀번호를 입력해 주세요." id ="input_pw">
+                    <input type="text" placeholder="비밀번호를 다시 입력해 주세요." id ="input_pw">
+                </div>
+        </div>
+        <div class="changebtn">
+            <button id="signbtn"> 회원가입 </button>
+            <h5 class="h5" href="#">로그인</h5>
+        </div>
+    </div>
+
+    <script>
+        function navigateToLogin() {
+            window.location.href = "../login/login.html";
+        }
+
+        function navigateToIndex() {
+            window.location.href = "../index/index.html";
+        }
+    </script>
+
+</body>
+</html>

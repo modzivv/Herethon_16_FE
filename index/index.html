@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" class="">
+    <title>처음화면</title>
+
+
+</head>
+
+<body>
+    
+    <div class="login">
+        <div class="logo"><img src="../static/images/logo_white.svg"></div>
+        <div class="button-container">
+            <button id="loginbtn" onclick="navigateToLogin()"> 로그인 </button>
+            <button id="signbtn" onclick="navigateToSignUp()"> 회원가입 </button>
+        </div>
+    </div>
+
+    <script>
+        function navigateToLogin() {
+            window.location.href = "../login/login.html";
+        }
+
+        function navigateToSignUp() {
+            window.location.href = "../sign_up/sign_up.html";
+        }
+    </script>
+</body>
+</html>
+

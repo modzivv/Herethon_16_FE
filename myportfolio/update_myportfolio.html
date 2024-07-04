@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="update_myportfolio.css" class="">
+    <title>포트폴리오 화면</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar"></div>
+        <div class="container">
+            <div class="header">
+                <img src="../static/images/logo_green.png" alt="로고"> 
+                <div class="search-container">
+                    <img src="../static/icons/search.png" alt="search">
+                    <input type="text" placeholder="검색어를 입력해 주세요.">
+                </div>
+                <div class="nav-links">
+                    <a href="#">포트폴리오</a>
+                    <a href="#">내 정보</a>
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+            <div class="main-content">
+                    <div class="profile-container">
+                        <button class="fixedbtn" onclick="">포트폴리오 수정</button>
+                        <div class="portfolio-detail">
+                            <div class="profile"><img class="photo" src="../static/images/profile.png" alt="프로필 사진"></div>
+                            <div class="profile-plus"><img src="../static/icons/+.svg" alt=""></div>
+                            <div class="fix-area">
+                                <div class="detail-name">
+                                    <form>
+                                        <label for="options" id="option">전문 분야 :</label>
+                                        <select id="options" name="options">
+                                            <option value="option1">감독</option>
+                                            <option value="option2">배우</option>
+                                            <option value="option3">성우</option>
+                                            <option value="option4">연출</option>
+                                            <option value="option5">음향</option>
+                                            <option value="option6">조명</option>
+                                            <option value="option7">의상</option>
+                                            <option value="option8">메이크업</option>
+                                            <option value="option9">아역</option>
+                                            <option value="option10">모델</option>
+                                            <option value="option9">인플루언서</option>
+                                        </select>
+                                    </form>
+                                    <h1> | </h1> 
+                                    <input type="text" placeholder="이름을 입력해 주세요." id ="input_name">
+                                </div>
+                                <input type="text" placeholder="한 줄 소개" id ="input_introduce">
+                                <div class="email">
+                                    <h5>E-mail |  <input type="text" placeholder="이메일 입력" id ="input_e-mail"> </h5>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="careersection">
+                            <h3>경력</h3>
+                                <div class="plus">
+                                    <img src="../static/icons/+ 2.svg">
+                                </div>
+                        </div>
+                        <hr>
+                        <div class="career">
+                            <table>
+                                <tr>
+                                    <th class="section"></th>
+                                    <th class="section">작품명</th>
+                                    <th class="section">역할</th>
+                                    <th class="section">연도</th>
+                                </tr>
+                                <tr>
+                                    <td class="icon-cell"><img src="../static/icons/- 2.svg" onclick="removeRow(this)"></td>
+                                    <td>단편 영화 &lt;2024 여기톤&gt;</td>
+                                    <td>배우 16팀 역</td>
+                                    <td>2021년</td>
+                                </tr>
+                                <tr>
+                                    <td class="icon-cell"><img src="../static/icons/- 2.svg" onclick="removeRow(this)"></td>
+                                    <td>단편 영화 &lt;2024 여기톤&gt;</td>
+                                    <td>배우 16팀 역</td>
+                                    <td>2021년</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <hr>
+                
+                        <h3>소개 글</h3>
+                        <textarea id="exampleTextarea" placeholder="자기 소개 글을 입력해 주세요!" name="introduce" rows="4" cols="50" maxlength="500"></textarea>
+                                
+                
+                        <hr>
+                        <div class="rep">
+                            <h3>대표작</h3>
+                            <div class="plus">
+                                <img src="../static/icons/+ 2.svg">
+                            </div>
+                        </div>
+                            <div class="video">
+                                <div class="videocontrol">
+                                    <div class="fixbtn-area">
+                                        <div class="minus">
+                                            <img src="../static/icons/- 2.svg">
+                                        </div>
+                                        <button class="rebtn" onclick="">수정하기</button>
+                                    </div>
+                                    <video width="430" height="270" controls>
+                                        <source src="영상_경로" type="video/mp4" id="video">
+                                        해당 브라우저에서는 영상 재생을 제공하지 않습니다.
+                                    </video>
+                                </div>
+                                <div class="videocontrol">
+                                    <div class="fixbtn-area">
+                                        <div class="minus">
+                                            <img src="../static/icons/- 2.svg">
+                                        </div>
+                                        <button class="rebtn" onclick="">수정하기</button>
+                                    </div>
+                                    <video width="430" height="270" controls>
+                                        <source src="영상_경로" type="video/mp4" id="video">
+                                        해당 브라우저에서는 영상 재생을 제공하지 않습니다.
+                                    </video>
+                                </div>
+                                <div class="videocontrol">
+                                    <div class="fixbtn-area">
+                                        <div class="minus">
+                                            <img src="../static/icons/- 2.svg">
+                                        </div>
+                                        <button class="rebtn" onclick="">수정하기</button>
+                                    </div>
+                                    <video width="430" height="270" controls>
+                                        <source src="영상_경로" type="video/mp4" id="video">
+                                        해당 브라우저에서는 영상 재생을 제공하지 않습니다.
+                                    </video>
+                                </div>
+                                
+                            </div>
+                </div>
+        </div>
+       
+    </div>
+    <div class="sidebar"></div>
+</body>
+</html>
+
+
+
+ 
