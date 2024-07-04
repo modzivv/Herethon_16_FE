@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DANJANG | 내 정보</title>
+    <link rel="stylesheet" href="myPage.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar"></div>
+      <div class="container">
+        <div class="header">
+          <a href="../main/main.html">
+            <img src="static/images/logo.png" alt="로고" />
+          </a>
+          <div class="search-container">
+            <img src="static/icons/search.png" alt="search" />
+            <input type="text" placeholder="검색어를 입력해 주세요." />
+          </div>
+          <div class="nav-links">
+            <a href="#">포트폴리오</a>
+            <a href="../myPage/myPage.html">내 정보</a>
+            <a href="#">로그아웃</a>
+          </div>
+        </div>
+        <!--myPage.html 메인 컨텐츠-->
+        <main>
+          <div class="contents">
+            <!--프로필-->
+            <section class="myProfile">
+              <div>
+                <img id="myPhoto" src="static/images/myPhoto.png" />
+                <h1>단장최고짱</h1>
+                <a href="#">
+                  <img id="modify" src="static/images/myPotpolio.png" />
+                </a>
+              </div>
+            </section>
+            <!--구분선-->
+            <img class="line" src="static/images/line.png" />
+            <!--나의 기록-->
+            <section class="row">
+              <h3>나의 기록</h3>
+              <a href="../myRecord/myRecord.html">
+                <img id="allR" src="static/images/viewAll.png" />
+              </a>
+              <div class="row_posters">
+                <!--나의 기록 영화 + 제목 한 세트-->
+                <a class="posterAndName" href="#">
+                  <div class="poster">
+                    <img src="" />
+                  </div>
+                  <figcaption>기록1</figcaption>
+                </a>
+                <a class="posterAndName" href="#">
+                  <div class="poster">
+                    <img src="" />
+                  </div>
+                  <figcaption>기록2</figcaption>
+                </a>
+                <a class="posterAndName" href="#">
+                  <div class="poster">
+                    <img src="" />
+                  </div>
+                  <figcaption>기록3</figcaption>
+                </a>
+              </div>
+            </section>
+            <!--구분선-->
+            <img class="line" src="static/images/line.png" />
+            <!--찜한 콘텐츠-->
+            <section class="row">
+              <a href="../myLike/myLike.html">
+                <img id="allL" src="static/images/viewAll.png" />
+              </a>
+              <h3>찜한 콘텐츠</h3>
+              <div class="row_posters">
+                <!--나의 기록 영화 + 제목 한 세트-->
+                <a class="posterAndName" href="#">
+                  <div class="poster">
+                    <img src="" />
+                  </div>
+                  <figcaption>찜1</figcaption> </a
+                ><a class="posterAndName" href="#">
+                  <div class="poster">
+                    <img src="" />
+                  </div>
+                  <figcaption>찜2</figcaption> </a
+                ><a class="posterAndName" href="#">
+                  <div class="poster">
+                    <img src="" />
+                  </div>
+                  <figcaption>찜3</figcaption>
+                </a>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+      <div class="sidebar"></div>
+    </div>
+  </body>
+</html>

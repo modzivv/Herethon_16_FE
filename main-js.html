@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Recommendations</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar"></div>
+      <div class="container">
+        <div class="header">
+          <a href="../main/main.html">
+            <img src="static/images/logo.png" alt="로고" />
+          </a>
+          <div class="search-container">
+            <img src="static/icons/search.png" alt="search" />
+            <input type="text" placeholder="검색어를 입력해 주세요." />
+          </div>
+          <div class="nav-links">
+            <a href="#">포트폴리오</a>
+            <a href="../myPage/myPage.html">내 정보</a>
+            <a href="#">로그아웃</a>
+          </div>
+        </div>
+        <!--main.html 메인 컨텐츠-->
+        <main>
+          <div class="contents">
+            <!--Today's movies-->
+            <div class="row">
+              <h2 class="today-movies">오늘의 추천 작품</h2>
+              <!--영화포스터와 제목 나열-->
+              <div class="row_posters"></div>
+            </div>
+
+            <!--Ranking-->
+            <div class="row">
+              <h2 class="movie-ranking">인기 순위</h2>
+              <!--영화포스터와 제목 나열-->
+              <div class="row_posters"></div>
+            </div>
+
+            <!--new's movies-->
+            <div class="row">
+              <h2 class="new-movies">신작</h2>
+              <!--영화포스터와 제목 나열-->
+              <div class="row_posters"></div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="sidebar"></div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
