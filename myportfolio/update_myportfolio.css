@@ -311,12 +311,42 @@ td {
     cursor: pointer;
 }
 
+.plusarea {
+    margin-left: 175px;
+    margin-bottom: 30px;
+}
+
+#sec1 {
+    margin-right: 50px;
+    width: 305px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid#17B001;
+    padding: 7px;
+}
+
+#sec2{
+    margin-right: 50px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid#17B001;
+    padding: 7px;
+}
+
+#sec3{
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid#17B001;
+    padding: 7px;
+}
+
 #exampleTextarea{
     width: 93%;
     height: 100px;
-    border: 2px solid #4EDD3A;
+    border: 2px solid #17B001;
     padding: 30px;
     resize: none;
+    border-radius: 10px;
 }
 
 .rep {
