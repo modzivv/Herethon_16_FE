@@ -107,6 +107,7 @@ body {
   height: 125px;
   border-radius: 70%;
   overflow: hidden;
+  background-color: gray;
 }
 #myPhoto img {
   width: 100%;
@@ -126,8 +127,11 @@ body {
   width: 200px;
   margin-bottom: 0;
   padding-left: 5px;
-  display: flex; /* 추가된 부분 */
-  text-align: center; /* 추가된 부분 */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: -20px; /* 위치를 위로 올리기 위해 top 값을 음수로 설정 */
 }
 #nickname h1 {
   width: 100%;
@@ -139,11 +143,12 @@ body {
 #modify {
   position: relative;
   left: 0;
-  top: 5px;
+  top: -15px; /* 위치를 위로 올리기 위해 top 값을 음수로 설정 */
   margin-left: 5px;
   width: 200px;
   height: auto;
 }
+
 /*구분선*/
 .line {
   margin-top: 20px;

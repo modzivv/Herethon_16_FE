@@ -20,7 +20,7 @@
           </div>
           <div class="nav-links">
             <a href="#">포트폴리오</a>
-            <a href="../myPage/myPage.html">내 정보</a>
+            <a href="myPage.html">내 정보</a>
             <a href="#">로그아웃</a>
           </div>
         </div>
@@ -30,11 +30,36 @@
             <!--프로필-->
             <section class="myProfile">
               <div>
-                <img id="myPhoto" src="static/images/myPhoto.png" />
-                <h1>단장최고짱</h1>
-                <a href="#">
-                  <img id="modify" src="static/images/myPotpolio.png" />
-                </a>
+                <div id="myPhoto">
+                  <img src="" />
+                </div>
+                <form method="get" action="#">
+                  <!--[체크]버튼-->
+                  <input
+                    id="commit"
+                    type="image"
+                    src="static/icons/commit.png"
+                    alt="프로필사진수정완료버튼"
+                  />
+                  <!--[+]버튼 클릭 시 파일 선택 실행 -->
+                  <input type="file" name="file1" style="display: none" />
+                  <img
+                    id="add"
+                    src="static/icons/add.png"
+                    onclick="document.all.file1.click()"
+                    ;
+                  />
+                </form>
+                <!--닉네임+내 포트폴리오 보기-->
+                <div class="nickname_profile">
+                  <div id="nickname">
+                    <h1>단장최고짱</h1>
+                  </div>
+                  <a href="#"
+                    ><div class=""></div>
+                    <img id="modify" src="static/images/myPotpolio.png" />
+                  </a>
+                </div>
               </div>
             </section>
             <!--구분선-->

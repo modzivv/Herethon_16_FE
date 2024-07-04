@@ -103,17 +103,49 @@ body {
 }
 #myPhoto {
   float: left;
+  width: 125px;
+  height: 125px;
+  border-radius: 70%;
+  overflow: hidden;
+  background-color: gray;
 }
-.myProfile h1 {
+#myPhoto img {
+  width: 100%;
+  height: 100%;
+}
+#commit {
+  visibility: hidden;
   position: relative;
-  left: 40px;
-  padding-top: 20px;
+  left: -120px;
+  top: 90px;
+}
+#add {
+  visibility: hidden;
+  position: relative;
+  left: -80px;
+  top: 90px;
+}
+#nickname {
+  width: 200px;
   margin-bottom: 0;
+  padding-left: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: -20px; /* 위치를 위로 올리기 위해 top 값을 음수로 설정 */
+}
+#nickname h1 {
+  width: 100%;
+  padding: 0; /* 수정된 부분 */
+  margin: 0;
   font-size: 3ch;
 }
 /*내 포트폴리오 보기 - 수정*/
 #modify {
-  margin-top: 5px;
+  position: relative;
+  left: 0;
+  top: -15px; /* 위치를 위로 올리기 위해 top 값을 음수로 설정 */
   margin-left: 5px;
   width: 200px;
   height: auto;
