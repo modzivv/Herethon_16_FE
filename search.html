@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 검색 페이지</title>
+    <link rel="stylesheet" href="search.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar"></div>
+        <div class="container">
+            <div class="header">
+                <img src="static/images/logo.png" alt="로고">
+                <div class="search-container">
+                    <img src="static/icons/search.png" alt="search" id="search-icon">
+                    <input type="text" placeholder="제목" id="search-input">
+                </div>
+                <div class="nav-links">
+                    <a href="#">포트폴리오</a>
+                    <a href="#">내 정보</a>
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="section">
+                    <h2>작품</h2>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <div class="thumbnail"></div>
+                            <div class="title">제목</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="thumbnail"></div>
+                            <div class="title">제목</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="thumbnail"></div>
+                            <div class="title">제목</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="thumbnail"></div>
+                            <div class="title">제목</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="thumbnail"></div>
+                            <div class="title">제목 이야기</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="thumbnail"></div>
+                            <div class="title">제목 속</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="thumbnail"></div>
+                            <div class="title">이야기</div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="thumbnail"></div>
+                            <div class="title">외전</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="static/images/line.png" alt="line" class="line-separator">
+                <div class="section">
+                    <h2>포트폴리오</h2>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item">
+                            <img src="static/images/actor.png" alt="배우">
+                            <div class="description">
+                                <p class="role">배우, 모델</p>
+                                <div class="movies">
+                                    <p>&lt;단편영화&gt; 숲</p>
+                                    <p>&lt;단편영화&gt; 행동</p>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="portfolio-item">
+                            <img src="static/images/actor.png" alt="배우">
+                            <div class="description">
+                                <p class="role">배우, 모델</p>
+                                <div class="movies">
+                                    <p>&lt;단편영화&gt; 숲</p>
+                                    <p>&lt;단편영화&gt; 행동</p>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="portfolio-item">
+                            <img src="static/images/actor.png" alt="배우">
+                            <div class="description">
+                                <p class="role">배우, 모델</p>
+                                <div class="movies">
+                                    <p>&lt;단편영화&gt; 숲</p>
+                                    <p>&lt;단편영화&gt; 행동</p>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="portfolio-item">
+                            <img src="static/images/actor.png" alt="배우">
+                            <div class="description">
+                                <p class="role">배우, 모델</p>
+                                <div class="movies">
+                                    <p>&lt;단편영화&gt; 숲</p>
+                                    <p>&lt;단편영화&gt; 행동</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar"></div>
+    </div>
+
+    <script>
+        document.getElementById('search-icon').addEventListener('click', function() {
+            const searchQuery = document.getElementById('search-input').value;
+            if (searchQuery) {
+            }
+        });
+    </script>
+</body>
+</html>

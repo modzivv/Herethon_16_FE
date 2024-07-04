@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 상세 페이지</title>
+    <link rel="stylesheet" href="detail.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar"></div>
+        <div class="container">
+            <div class="header">
+                <img src="static/images/logo.png" alt="로고"> 
+                <div class="search-container">
+                    <img src="static/icons/search.png" alt="search">
+                    <input type="text" placeholder="검색어를 입력해 주세요.">
+                </div>
+                <div class="nav-links">
+                    <a href="#">포트폴리오</a>
+                    <a href="#">내 정보</a>
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="media-placeholder" id="media-placeholder">영화</div>
+                <div class="movie-header">
+                    <div class="movie-title" id="movie-title">영화 제목</div>
+                    <button class="like-button" id="likeButton"></button>
+                </div>
+                <div class="details-container">
+                    <div class="details">
+                        <span class="actor-label">출연진</span> <span id="actors" class="actor-content">예시, 예시, 예시</span>
+                        <span class="staff-label">스탭</span> <span id="staff" class="staff-content">예시</span>
+                    </div>
+                    <div class="purchase">
+                        <span class="price-label">유료</span> 1000₩
+                        <button>구매하기 <img src="static/icons/buy.png" alt="구매하기"></button>
+                    </div>
+                </div>            
+                <div class="details">
+                    <span class="keyword-label">키워드</span> <span id="keywords" class="keyword-content">예시, 예시, 예시</span>
+                </div>
+                <div class="synopsis">
+                    <span class="synopsis-label">시놉시스</span>
+                    <p id="synopsis">
+                        시놉시스는 용도가 여러 가지로 나뉜다. 
+                        작가들이 스스로 자신의 작품 구상을 정리해 설계도처럼 사용하는 시놉시스가 있다. 
+                        본격적으로 작품의 제작에 들어가기 앞서 기획자와 제작자에게 작품 제작을 제안할 때 사용하는 시놉시스. 제안서, 기획서와 유사하다. 
+                        공동 창작이 필요한 작품을 만들 때 내용을 공유하는 가이드나 참고자료로 지속적으로 활용되는 시놉시스가 있다. 
+                        사람들의 흥미를 유발하기 위해 작성된 줄거리를 절반쯤만 소개하는 시놉시스. 
+                        일반인들이 영화 포스터, 티저 영상, 인터넷의 영화 소개 등에서 흔히 접할 수 있다. 
+                        이것은 홍보용 시놉시스라고 하며 일반적인 시놉시스들에 비해서는 다소 이질적인 형태를 띠고 있다.
+                    </p>
+                </div>
+                <div class="edit-button-container">
+                    <button class="edit-button" onclick="location.href='edit.html'">수정</button>
+                </div>           
+            </div>
+        </div>
+        <div class="sidebar"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const movieTitle = localStorage.getItem('movieTitle');
+            const actors = localStorage.getItem('actors');
+            const staff = localStorage.getItem('staff');
+            const keywords = localStorage.getItem('keywords');
+            const synopsis = localStorage.getItem('synopsis');
+
+            if (movieTitle) document.getElementById('movie-title').textContent = movieTitle;
+            if (actors) document.getElementById('actors').textContent = actors;
+            if (staff) document.getElementById('staff').textContent = staff;
+            if (keywords) document.getElementById('keywords').textContent = keywords;
+            if (synopsis) document.getElementById('synopsis').textContent = synopsis;
+        });
+
+        document.getElementById('likeButton').addEventListener('click', function() {
+            this.classList.toggle('liked');
+        });
+    </script>
+</body>
+</html>
