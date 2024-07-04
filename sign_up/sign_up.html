@@ -9,7 +9,7 @@
 <body>
     <div class="header">
         <div class="logofield">
-            <img src="../static/images/logo_white.svg" alt="로고" onclick="navigateToIndex()">
+            <img src="../static/images/logo_white.svg" alt="로고">
             <h1>회원가입</h1>
         </div>
         <div class="film"><img src="../static/images/film.svg" alt="필름"></div>
@@ -32,18 +32,14 @@
                 </div>
         </div>
         <div class="changebtn">
-            <button id="signbtn"> 회원가입 </button>
+            <button id="signbtn" onclick="navigateToIndex()"> 회원가입 </button>
             <h5 class="h5" href="#">로그인</h5>
         </div>
     </div>
 
     <script>
-        function navigateToLogin() {
-            window.location.href = "../login/login.html";
-        }
-
         function navigateToIndex() {
-            window.location.href = "../index/index.html";
+            window.location.href = "../Herethon_16_FE/index/index.html";
         }
     </script>
 

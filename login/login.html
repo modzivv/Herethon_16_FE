@@ -9,7 +9,7 @@
 <body>
     <div class="header">
         <div class="logofield">
-            <img src="../static/images/logo_white.svg" alt="로고" onclick="navigateToIndex()">
+            <img src="../static/images/logo_white.svg" alt="로고">
             <h1>로그인</h1>
         </div>
         <div class="film"><img src="../static/images/film.svg" alt="필름"></div>
@@ -24,19 +24,17 @@
             <input type="text" placeholder="   비밀번호를 입력해 주세요." id ="input_pw">
         </div>
         <div class="changebtn">
-            <button id="login"> 로그인 </button>
-            <h5 class="h5" onclick="navigateToSignUp()">회원가입</h5>
+            <button id="login" onclick="navigateToMain()"> 로그인 </button>
+            <h5 class="h5" href="#">회원가입</h5>
         </div>
     </div>
 
     <script>
-        function navigateToSignUp() {
-            window.location.href = "../sign_up/sign_up.html";
+        function navigateToMain() {
+            window.location.href = "../Herethon_16_FE/main.html";
         }
 
-        function navigateToIndex() {
-            window.location.href = "../index/index.html";
-        }
+        
     </script>
 
 </body>

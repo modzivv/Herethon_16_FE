@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="upload_myportfolio.css" class="">
+    <title>포트폴리오 화면</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar"></div>
+        <div class="container">
+            <div class="header">
+                <img src="../static/images/logo_green.png" alt="로고"> 
+                <div class="search-container">
+                    <img src="../static/icons/search.png" alt="search">
+                    <input type="text" placeholder="검색어를 입력해 주세요.">
+                </div>
+                <div class="nav-links">
+                    <a href="#">포트폴리오</a>
+                    <a href="#">내 정보</a>
+                    <a href="#">로그아웃</a>
+                </div>
+            </div>
+            <div class="main-content">
+                    <div class="profile-container">
+                        <button class="fixedbtn" onclick="EditDone()">포트폴리오 생성</button>
+                        
+                        <section class="myProfile">
+                            <div>
+                              <div id="myPhoto">
+                                <img src="" />
+                              </div>
+                              <form method="get" action="#">
+                                <!--[체크]버튼-->
+                                <input
+                                  id="commit"
+                                  type="image"
+                                  src="../static/icons/commit.png"
+                                  alt="프로필사진수정완료버튼"
+                                />
+                                <!--[+]버튼 클릭 시 파일 선택 실행 -->
+                                <input type="file" name="file1" style="display: none" />
+                                <img
+                                  id="add"
+                                  src="../static/icons/add.png"
+                                  onclick="document.all.file1.click()"
+                                  ;
+                                />
+                              </form>
+              
+                            <div class="fix-area">
+                                <div class="detail-name">
+                                    <div class="optioncontainer">
+                                        <form>
+                                            <label for="options" id="option">전문 분야 :</label>
+                                            <select id="options" name="options">
+                                                <option value="option1">감독</option>
+                                                <option value="option2">배우</option>
+                                                <option value="option3">성우</option>
+                                                <option value="option4">연출</option>
+                                                <option value="option5">음향</option>
+                                                <option value="option6">조명</option>
+                                                <option value="option7">의상</option>
+                                                <option value="option8">메이크업</option>
+                                                <option value="option9">아역</option>
+                                                <option value="option10">모델</option>
+                                                <option value="option9">인플루언서</option>
+                                            </select>
+                                        </form>
+                                     </div>
+                                    <h1> | </h1> 
+                                    <input type="text" placeholder="이름을 입력해 주세요." id ="input_name">
+                                </div>
+                                <input type="text" placeholder="한 줄 소개" id ="input_introduce">
+                                <div class="email">
+                                    <h5>E-mail |  <input type="text" placeholder="이메일 입력" id ="input_e-mail"> </h5>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+
+                        <hr>
+                
+                        <h3>소개 글</h3>
+                        <textarea id="Textarea" placeholder="자기 소개 글을 입력해 주세요!" name="introduce" rows="4" cols="50" maxlength="500"></textarea>
+                                
+                    </div>
+                </div>
+        </div>
+       
+    </div>
+    <div class="sidebar"></div>
+
+    <script>
+        function navigateToEdit() {
+            window.location.href = "../Herethon_16_FE/templates/edit/edit.html";
+        }
+
+        <!-- 수정 완료 -->
+
+        function EditDone() {
+        }
+
+    </script>
+
+</body>
+</html>

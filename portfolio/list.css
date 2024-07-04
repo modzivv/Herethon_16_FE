@@ -236,6 +236,7 @@ hr {
     background-color: #4EDD3A;
     border-radius: 30px;
     font-family: 'Pretendard-ExtraBold';
+    z-index: 1000;
 }
 
 .detail:hover {

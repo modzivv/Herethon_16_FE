@@ -42,10 +42,10 @@
                     </ul>
                 </nav>
                 <div class="list">
-                    
+
                     <div class="portfolio-area">
                         <div class="profile">
-                            <img class="photo" src="../static/images/profile.png" alt="프로필 사진">
+                            <a href="#"><img class="photo" src="../static/images/profile.png" alt="프로필 사진"></a>
                         </div>
                         <div class="profile-detail">
                             <h4>홍길동</h4>
@@ -60,24 +60,24 @@
                                     <a>경력 3</a>
                                 </ul>
                             </div>
-                            <button class="detail">상세 포트폴리오 ></button>
+                            <button class="detail" onclick="navigateToProtfolio()">상세 포트폴리오 ></button>
                         </div>
                         <div class="project">
                             <div class="project-detail">
                                 <div class="filmmark">
-                                    <img class="box" src="대표작 이미지" alt="대표작 1">
+                                    <a href="#"><img class="box" src="대표작 이미지" alt="대표작 1"></a>
                                 </div>
                                 <h6>대표작 1</h6>
                             </div>
                             <div class="project-detail">
                                 <div class="filmmark">
-                                    <img class="box" src="대표작 이미지" alt="대표작 2">
+                                    <a href="#"><img class="box" src="대표작 이미지" alt="대표작 2"></a>
                                 </div>
                                 <h6>대표작 2</h6>
                             </div>
                             <div class="project-detail">
                                 <div class="filmmark">
-                                    <img class="box" src="대표작 이미지" alt="대표작 3">
+                                    <a href="#"><img class="box" src="대표작 이미지" alt="대표작 3"></a>
                                 </div>
                                 <h6>대표작 3</h6>
                             </div>
@@ -86,7 +86,7 @@
 
                     <div class="portfolio-area">
                         <div class="profile">
-                            <img class="photo" src="../static/images/profile.png" alt="프로필 사진">
+                            <a href="#"><img class="photo" src="../static/images/profile.png" alt="프로필 사진"></a>
                         </div>
                         <div class="profile-detail">
                             <h4>홍길동</h4>
@@ -101,65 +101,24 @@
                                     <a>경력 3</a>
                                 </ul>
                             </div>
-                            <button class="detail">상세 포트폴리오 ></button>
+                            <button class="detail" onclick="navigateToProtfolio()">상세 포트폴리오 ></button>
                         </div>
                         <div class="project">
                             <div class="project-detail">
                                 <div class="filmmark">
-                                    <img class="box" src="대표작 이미지" alt="대표작 1">
+                                    <a href="#"><img class="box" src="대표작 이미지" alt="대표작 1"></a>
                                 </div>
                                 <h6>대표작 1</h6>
                             </div>
                             <div class="project-detail">
                                 <div class="filmmark">
-                                    <img class="box" src="대표작 이미지" alt="대표작 2">
+                                    <a href="#"><img class="box" src="대표작 이미지" alt="대표작 2"></a>
                                 </div>
                                 <h6>대표작 2</h6>
                             </div>
                             <div class="project-detail">
                                 <div class="filmmark">
-                                    <img class="box" src="대표작 이미지" alt="대표작 3">
-                                </div>
-                                <h6>대표작 3</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-area">
-                        <div class="profile">
-                            <img class="photo" src="../static/images/profile.png" alt="프로필 사진">
-                        </div>
-                        <div class="profile-detail">
-                            <h4>홍길동</h4>
-                            <h5>전문 분야</h5>
-                        </div>
-                        <div class="introduce">
-                            <div class="intro-detail">
-                                <h5>한 줄 소개</h5>
-                                <ul>
-                                    <a>경력 1</a>
-                                    <a>경력 2</a>
-                                    <a>경력 3</a>
-                                </ul>
-                            </div>
-                            <button class="detail">상세 포트폴리오 ></button>
-                        </div>
-                        <div class="project">
-                            <div class="project-detail">
-                                <div class="filmmark">
-                                    <img class="box" src="대표작 이미지" alt="대표작 1">
-                                </div>
-                                <h6>대표작 1</h6>
-                            </div>
-                            <div class="project-detail">
-                                <div class="filmmark">
-                                    <img class="box" src="대표작 이미지" alt="대표작 2">
-                                </div>
-                                <h6>대표작 2</h6>
-                            </div>
-                            <div class="project-detail">
-                                <div class="filmmark">
-                                    <img class="box" src="대표작 이미지" alt="대표작 3">
+                                    <a href="#"><img class="box" src="대표작 이미지" alt="대표작 3"></a>
                                 </div>
                                 <h6>대표작 3</h6>
                             </div>
@@ -170,5 +129,12 @@
             </div>
     </div>
     <div class="sidebar"></div>
+
+    <script>
+        function navigateToProtfolio() { 
+            window.location.href = "../Herethon_16_FE/portfolio/portfolio.html";
+            console.log('버튼이 클릭되었습니다!');
+        }
+    </script>
 </body>
 </html>
